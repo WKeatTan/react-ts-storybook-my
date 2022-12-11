@@ -1,0 +1,56 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "babel",
+    "react",
+    "@typescript-eslint",
+    "prettier",
+    "react-hooks"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["."],
+        "extensions": [".js", ".ts", ".tsx"]
+      },
+      "typescript": {},
+      "eslint-import-resolver-custom-alias": {
+        "alias": {
+          "map": [
+            ["assets", "./src/assets"],
+            ["components", "./src/components"],
+            ["layouts", "./src/layouts"],
+            ["lib", "./src/lib"],
+            ["provider", "./src/provider"]
+          ],
+          "extensions": [".ts", ".tsx", ".js", ".jsx", ".json"]
+        }
+      }
+    }
+  },
+  "rules": {}
+}

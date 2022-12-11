@@ -1,0 +1,32 @@
+@import 'variables';
+
+/* base styling for our button */
+.btn {
+  padding: 0.6rem 1rem;
+  background: transparent;
+  border: 1px solid #1e1e1e;
+  cursor: pointer;
+}
+
+/* styling for our variants */
+.btn-primary {
+  border: none;
+  background-color: $blue !important;
+  color: $white !important;
+  &:hover {
+    background-color: $blue !important;
+  }
+}
+.btn-danger {
+  border: none;
+  background-color: $red !important;
+  color: $white !important;
+  &:hover {
+    background-color: $red !important;
+  }
+}
+
+/* styling for different shape*/
+.btn-rounded {
+  border-radius: 0.4rem;
+}
